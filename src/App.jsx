@@ -1,33 +1,42 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import InicioSesion from './Componentes/InicioSesion/InicioSesion'
 import './App.css'
+import Input from './Componentes/Input'
+import Button from './Componentes/Button'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  // const InicioSesion =()=>{
+  //   const apiUrl = "http://localhost:3000/api/task/";
+  //   const PostData = async (usuarios) =>{
+  //       try {
+  //         let response = await fetch(apiUrl, {
+  //           estado:usuarios[nombre, clave],
+  //           method: "POST",
+  //           mode: "cors",
+  //           credentials: "same-origin",
+  //           headers:{
+  //               "content-Type": "application/json",
+  //           },
+  //           body: JSON.stringify(usuarios)
+  //         });
+  //         let data = await response.json();
+  //         return data;
+            
+  //       } catch (e) {
+  //           console.log(e);
+  //           return null;  
+            
+  //       }
+        
+  //   }
+  // }
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <InicioSesion/>
+      
     </>
   )
 }
